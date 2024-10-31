@@ -1,0 +1,28 @@
+.skills {
+  margin: 150px auto 150px auto;
+
+  .skills-content {
+    .text-wrapper {
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+    .skills-list {
+      @include dFlex(space-between, start);
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .skills {
+    margin: 70px auto 70px auto;
+
+    .skills-content {
+      .skills-list {
+        @include dFlex(start, center, column);
+        row-gap: 20px;
+      }
+    }
+  }
+}
